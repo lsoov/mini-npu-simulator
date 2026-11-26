@@ -4,12 +4,28 @@
 - **실행 환경:** Python 3.8 이상 (NumPy, Pandas 등 외부 라이브러리 없이 표준 라이브러리 `json`, `time`만 사용)
 - **파일 위치:** `main.py`와 `data.json` 파일을 동일한 폴더(디렉토리)에 위치시킵니다.
 - **실행 명령어:** 터미널에서 아래 명령어를 입력해 프로그램을 실행합니다.
-  ```bash
-  python main.py
-  ```
+  ```powershell
+   #작업할 폴더로 이동 (예: 바탕화면)
+    cd ~/Desktop
+
+    #저장소 내려받기 
+    git clone https://github.com/lsoov/mini-npu-simulator.git
+
+    #폴더로 들어가기
+    cd mini-npu-simulator
+
+    #프로그램 실행
+    python main.py
+    ```
+    
 - **모드 선택 안내:**
   - `1` 입력 시: 3×3 크기의 필터 A, B와 입력 패턴을 콘솔에서 공백으로 구분해 한 줄씩 직접 입력하여 MAC 연산 및 판정 수행
   - `2` 입력 시: `data.json` 파일을 자동으로 로드하여 5×5, 13×13, 25×25 크기별 패턴 일괄 검증 및 성능 분석 수행
+
+
+  ![모드 1 실행 결과](모드1.png)
+
+  ![모드 2 실행 결과](모드2.png)
 
 ---
 
